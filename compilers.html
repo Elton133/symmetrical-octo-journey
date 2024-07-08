@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C++ Compilers</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+    <style>
+        body {
+            background-color: #fffbfb;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        p,
+        ul {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        hr {
+            border-color: #333;
+            margin: 20px 0;
+        }
+
+        .centered {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="index.html">Bjarne Stroustrup</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="C++.html">C++</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bs_faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bs_faq2.html">Technical FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="WG21.html">WG21 Papers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="4th.html">TC++PL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tour.html">Tour++</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="programming.html">Programming</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dne.html">D&E</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bio.html">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="interviews.html">Interviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="videos.html">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quotes.html">Quotes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="applications.html">Applications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md">Guidelines</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="compilers.html">Compilers</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <hr style="border-color: #fff" />
+        <h1>An incomplete list of C++ compilers</h1>
+        <p align="right">Modified April 28, 2019</p>
+        <p>
+            I (<a href="index.html">Bjarne Stroustrup</a>) am often asked to
+            recommend a C++ compiler. However, I don't make recommendations; that
+            would be too much like taking sides in commercial wars. Also, I don't
+            know every C++ compiler; there are simply too many "out there".
+        </p>
+        <p>
+            I recommend that people take Standard conformance very seriously when
+            considering a compiler. If you can, avoid any compiler that doesn't
+            closely approximate the ISO standard or fails to supply a solid
+            implementation of the standard library. The recent releases from all the
+            major C++ vendors do that.
+        </p>
+        <p>
+            Most of these compilers are embedded in frameworks of software
+            development tools and libraries. These frameworks, environments, and
+            libraries can be most helpful, but do remember that their use can lock
+            you into a single vendor and that some uses have significant run-time
+            performance implications.
+        </p>
+        <p>
+            When looking for C++ on the web, you find that much of the information
+            is "hidden" under various product names. In fact, I had more luck
+            finding C++ compilers using google.com than by going directly to vendors
+            that I knew sold them. Here, I have chosen to list C++ implementations
+            simply by the name of their provider, ignoring marketing labels.
+        </p>
+        <h2>
+            Some compilers that can be downloaded for free (do check their
+            conditions/licenses before attempting commercial use):
+        </h2>
+        <ul>
+            <li>
+                <a href="http://developer.apple.com/tools/macosxtools.html">Apple C++</a>. Xcode. It also comes with OS
+                X on the developer tools CD.
+            </li>
+            <li>
+                <a href="http://www.bloodshed.net/devcpp.html">Bloodshed Dev-C++</a>.
+                A GCC-based (Mingw) IDE.
+            </li>
+            <li>
+                <a href="http://clang.llvm.org/">Clang C++</a>. A relatively very
+                active development associated with the analysis and code generation
+                framework, LLVM.
+            </li>
+            <li><a href="http://www.cygwin.com">Cygwin (GNU C++)</a></li>
+            <li>
+                <a href="http://www.mentor.com/embedded-software/sourcery-tools/sourcery-codebench/lite-edition">Mentor
+                    Graphics - Lite edition</a>. Sourcery CodeBench.
+            </li>
+            <li>
+                <a href="http://www.mingw.org">MINGW - "Minimalist GNU for Windows"</a>. Another GCC version for Windows
+                including a free (non-GPL) w32api.
+            </li>
+            <li><a href="http://gcc.gnu.org/">GNU CC source</a></li>
+            <li>
+                <a href="http://www-03.ibm.com/software/products/en/ccompfami">IBM C++</a>
+                for IBM power, System Z, Bluegene, and Cell.
+            </li>
+            <li>
+                <a href="https://software.intel.com/en-us/forums/intel-system-studio">Intel C++ and many supporting
+                    tools</a>
+            </li>
+            <li>
+                <a href="https://visualstudio.microsoft.com/downloads/">Microsoft Visual C++</a>
+            </li>
+            <li>
+                <a href="http://www.oracle.com/technetwork/server-storage/solarisstudio/overview/index.html">Oracle
+                    C++</a>
+            </li>
+        </ul>
+        <h2>
+            Some compilers that require payment (some allow free downloads for trial
+            periods):
+        </h2>
+        <ul>
+            <li>
+                <a href="http://www.embarcadero.com/products/cbuilder">Embarcadero C++</a>
+            </li>
+            <li>
+                <a href="http://www.edg.com/cpp.html">Edison Design Group C++ Front End</a>
+                - used by
+                <a href="http://www.edg.com/resellers.html">many C++ compiler suppliers</a>
+            </li>
+            <li>
+                <a href="http://www.ghs.com/products/compiler.html">Green Hills C++</a>
+                for many embedded systems platforms
+            </li>
+            <li>
+                <a href="http://h30266.www3.hpe.com/odl/unix/progtool/deccxx71/ugu_port.html">HP C++</a>
+            </li>
+            <li>
+                <a href="http://www.intel.com/software/products/compilers/">Intel C++</a>
+                for Windows, Linux, and some embedded systems.
+            </li>
+            <li>
+                <a href="http://www.mentor.com/embedded-software/sourcery-tools/sourcery-codebench/">Mentor Graphics
+                    Sourcery CodeBench</a>
+                An extensive "Workbench" for many embedded systems platforms.
+            </li>
+            <li><a href="http://msdn.microsoft.com/visualc">Microsoft C++</a></li>
+            <li>
+                <a href="http://www.devtools.com/">Paradigm C++</a>, for x86 embedded
+                systems
+            </li>
+            <li>
+                <a href="http://www.pgroup.com/prodworkpgcc.htm">The Portland Group C++</a>
+                (parallelization and GPUs)
+            </li>
+            <li>
+                <a href="http://www.windriver.com/products/">WindRiver's Diab C++</a>
+                used in many embedded systems.
+            </li>
+        </ul>
+        <p>
+            It is impossible for me to keep this list complete and up-to-date. The
+            C++ world is just too large and too much new is happening. Apologies to
+            those suppliers who I failed to list, I know there are some, and please,
+            if you have a link that you think ought to be listed here, send me a
+            message: bs at cs dot tamu dot edu. Again: I just list compilers, I
+            don't endorse them. Also, there can be no one compiler that is best for
+            everyone, people's needs differ too much for that.
+        </p>
+        <h2>Other lists of C++ compilers:</h2>
+        <ul>
+            <li>
+                <a href="http://www.compilers.net/Dir/Free/Compilers/CCpp.htm">Compilers.net</a>: A list of free C and
+                C++ compilers.
+            </li>
+        </ul>
+        <p>
+            A filter to improve error messages from many compilers see
+            <a href="http://www.bdsoft.com/tools/stlfilt.html">STLfilt</a>.
+        </p>
+    </div>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

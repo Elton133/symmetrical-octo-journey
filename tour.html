@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="A Tour of C++" />
+    <meta name="keywords"
+        content="A Tour of C++, C++, Tour, object-oriented programming, design, generic programming, programming" />
+    <title>Stroustrup: A Tour of C++ (Third edition)</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+    <style>
+        body {
+            color: white;
+        }
+
+        h1,
+        h4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="index.html">Bjarne Stroustrup</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="C++.html">C++</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bs_faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bs_faq2.html">Technical FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="WG21.html">WG21 Papers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="4th.html">TC++PL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tour.html">Tour++</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="programming.html">Programming</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dne.html">D&E</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bio.html">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="interviews.html">Interviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="videos.html">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quotes.html">Quotes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="applications.html">Applications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md">Guidelines</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="compilers.html">Compilers</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" />
+    <div class="container my-4">
+        <h1 class>A Tour of C++ (Third edition)</h1>
+        <h4 class="mb-4">
+            Addison-Wesley. ISBN-10: 0-13-681648-7. September 2022.
+        </h4>
+        <div class="row align-items-center pb-4">
+            <div class="col-md-4">
+                <img class="img-fluid" src="https://www.stroustrup.com/Tour3English-large.jpg" alt="Book Cover" />
+            </div>
+            <div class="col-md-8">
+                <p class="lead">
+                    The "tour" is a quick (254 pages + index, historical information,
+                    etc.) tutorial overview of all of standard C++ (language and
+                    standard library) at a moderately high level for people who already
+                    know C++ or at least are experienced programmers. It covers C++20
+                    plus a few likely features of C++23. <br />
+
+                    <a
+                        href="https://www.informit.com/store/tour-of-c-plus-plus-9780136816485?utm_source=referral&utm_medium=author&utm_campaign=cpptour3e">Information
+                        from the publisher</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="card-header bg-dark rounded">Available here</div>
+        <div class="card-body rounded">
+            <ul>
+                <li><a href="tour3preface.pdf">The Preface</a></li>
+                <li><a href="tour3toc.pdf">Table of Contents</a></li>
+                <li><a href="tour3-12-Cont.pdf">Chapter 12: Containers</a></li>
+                <li><a href="tour3_errata.html">Errata</a></li>
+                <li>
+                    Exercises from
+                    <a href="4th.html">The C++ Programming Language (4th Edition)</a>
+                </li>
+                <li><a href="books.html">My book list</a></li>
+                <li><a href="covers.html">My book covers</a></li>
+            </ul>
+        </div>
+        <p class="lead">
+            If you are looking for a more complete description of C++ and the styles
+            of programming it supports, consider
+            <a href="4th.html">The C++ Programming Language (4th Edition)</a>.
+        </p>
+        <p class="lead">
+            If you are looking for an introduction to programming for people who
+            have never programmed before, consider
+            <a href="programming.html">Programming -- Principles and Practice Using C++</a>. That book is also useful
+            for people who have programmed a bit and
+            want to improve their style and technique - or to simply learn modern
+            C++. It is designed for classroom use, but written with an eye on
+            self-study.
+        </p>
+        <hr style="border-color: #fff" />
+        <h2>Reviews</h2>
+        <p class="lead">
+            I don't have to agree with a review or blog post to list it, but it
+            helps if I think at least some parts make sense.
+        </p>
+        <ul>
+            <li>None so far.</li>
+        </ul>
+        <hr style="border-color: #fff" />
+        <h2>Translations</h2>
+        <p class="lead">
+            See <a href="covers.html">Cover page</a> for a rough approximation.
+        </p>
+        <hr style="border-color: #fff" />
+        <p class="lead">
+            Constructive comments and reports of errors are always welcome.
+        </p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
