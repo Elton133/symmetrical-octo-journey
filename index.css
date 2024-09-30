@@ -35,7 +35,7 @@
     color: #ffffff;
   }
   .content-section {
-    padding: 20px 0;
+    /* padding: 20px 0; */
   }
   .content-section h1 {
     color: #007bff;
@@ -50,4 +50,17 @@
     /* added this */
     line-height: 30px;
   }
-
+  .sidebar {
+    background-color: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+@media(width <= 768px){
+    *{
+      overflow-x: hidden;
+    }
+    h1{
+      font-size: 30px;
+    }
+  
+}
